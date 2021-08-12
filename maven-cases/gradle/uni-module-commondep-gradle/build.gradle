@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:29.0-jre'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.2.5.RELEASE'
+    testImplementation 'junit:junit:4.13.1'
+    implementation 'org.springframework:spring-core:5.0.7.RELEASE'
+    implementation 'org.springframework:spring-aop:5.0.7.RELEASE'
+    implementation 'org.springframework:spring-context:5.0.7.RELEASE'
+    implementation 'org.springframework:spring-tx:5.0.7.RELEASE'
+    implementation 'org.springframework:spring-orm:5.0.7.RELEASE'
+    implementation 'org.aspectj:aspectjrt:1.8.1'
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
+}
+
+apply from: "${rootProject.projectDir}/dependencies.gradle"
+
+group = 'group'
+version = '1.0.0'
