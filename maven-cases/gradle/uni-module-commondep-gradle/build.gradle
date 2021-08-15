@@ -11,8 +11,6 @@ dependencies {
     implementation 'com.google.guava:guava:29.0-jre'
     implementation 'org.springframework.boot:spring-boot-starter-web:2.2.5.RELEASE'
     testImplementation 'junit:junit:4.13.1'
-    implementation 'org.springframework:spring-core:5.0.7.RELEASE'
-    implementation 'org.springframework:spring-aop:5.0.7.RELEASE'
 }
 
 apply from: "${rootProject.projectDir}/dependencies.gradle"
