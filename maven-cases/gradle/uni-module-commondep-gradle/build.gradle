@@ -19,10 +19,6 @@ dependencies {
             exclude group: 'org.unwanted', module: 'iAmBuggy'
             transitive = false
         }
-    implementation('org.springframework:spring-core:3.0.6.RELEASE') {
-        force = true
-        exclude group: 'org.unwanted', module: 'iAmBuggy'
-    }   
 }
 
 apply from: "${rootProject.projectDir}/dependencies.gradle"
